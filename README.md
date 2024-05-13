@@ -112,6 +112,12 @@ macos 要求 tun 设备的名称满足正则表达式 `utun[0-9]*` ，因此需�
 }
 ```
 
+# Docker
+
+```bash
+docker run -p 1080:1080 -v ./config.json:/app/config.json -v ./corplink_cookies.json:/app/corplink_cookies.json --cap-add=NET_ADMIN [image_name]
+```
+
 # 原理和分析
 
 [飞连][1] 是基于 [wg-go][2] 魔改的企业级 VPN 产品
