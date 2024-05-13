@@ -142,7 +142,7 @@ async fn main() {
                     log::warn!("failed to receive signal: {}",e);
                 },
             }
-            log::info!("ctrl+v received");
+            log::info!("ctrl+c received");
         } => {},
 
         // keep alive
